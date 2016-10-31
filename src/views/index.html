@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>YASSGen</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    <style>{{ css|safe }}
+    </style>
+  </head>
+  <body>
+
+<section>
+  <div class="page">
+    <div class="content">
+      <h1>Blog Posts</h1>
+      <hr/>
+
+<dl class="posts">
+{% for post in site.posts %}
+  <dt>{{ post.date|date('F d, Y') }}</dt>
+  <dd><a href="./{{ site.blogPath }}{{ post.path }}">{{ post.title }}</a></dd>
+{% endfor %}
+</dl>
+
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

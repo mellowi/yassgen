@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>YASSGen</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    <style>{{ css|safe }}
+    </style>
+  </head>
+  <body>
+
+<section>
+  <div class="page">
+    <div class="content">
+      <h1>{{ page.title }}</h1>
+      <span class="date">{{ page.date|date('F d, Y') }}</span>
+      <hr/>
+{{ contents|safe }}
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

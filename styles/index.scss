@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(https://fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBrrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(https://fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxhbnBKKEOwRKgsHDreGcocg.woff) format('woff');
+}
+
+* {
+  -webkit-box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+body {
+  font-size: 12pt;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+
+  color: #353d35;
+  background-color: #ffffff;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+a {
+  color: #00a948;
+}
+
+a:hover {
+  color: #00672c;
+  text-decoration: underline;
+}
+
+ul {
+  margin: 0 1em 1em;
+}
+
+pre, code {
+  padding: 0 2px;
+  border: 1px solid #e0e9e0;
+  border-radius: 3px;
+  font-size: .9em;
+  font-family: monospace;
+}
+
+pre {
+  margin-bottom: 1em;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+pre code {
+  padding: 0;
+  border: 0;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #e0eae0;
+  height: 0;
+}
+
+/* layout */
+
+section {
+  padding: 100px 50px;
+  min-height: 50%;
+}
+
+section:not(:last-child) {
+  border-bottom: 1px solid #e0eae0;
+}
+
+.header {
+  min-height: 10%;
+}
+
+.comments {
+  padding: 30px 15px;
+  min-height: 10%;
+}
+
+.page {
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 800px;
+}
+
+.content {
+  margin-bottom: 10px;
+}
+
+.posts dt {
+  font-style: italic;
+  font-size: 0.8em;
+}
+.posts dd {
+  margin: 0 0 1em;
+}
+.posts dd a {
+  text-decoration: none;
+}
+
+/* scaling */
+
+@media screen and (max-width: 960px) {
+  section {
+    padding: 60px 30px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  section {
+    padding: 30px 15px;
+  }
+}
