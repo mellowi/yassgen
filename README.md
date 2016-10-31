@@ -5,7 +5,7 @@ YASSGen is Yet Another Static Site Generator
 ## Features
 
 - Copies assets to the build folder
-- Generates the blog with normal template and AMP template
+- Generates the blog with index and post templates
 - Builds SASS to CSS and includes the CSS in the HTML files
 - Parses metadata from Markdown files
 - Converts Markdown to HTML and includes it in the HTML files
