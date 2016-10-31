@@ -1,6 +1,6 @@
 # YASSGen
 
-YASSGen is Yet Another Static Site Generator. To use YASSGen you need to have Node.js and gulp.js command tool installed.
+YASSGen is Yet Another Static Site Generator
 
 ## Features
 
@@ -13,8 +13,6 @@ YASSGen is Yet Another Static Site Generator. To use YASSGen you need to have No
 - Automatically watches changes and updates the build accordingly
 
 ## Installing
-
-First you need to install Node.js.
 
 1. Install [Node](http://nodejs.org/)
 2. Install gulp.js client and development dependencies of the build tool by running these commands in this project's directory:
